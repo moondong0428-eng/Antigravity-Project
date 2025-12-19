@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | Design Noel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .detail-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 150px 20px 100px;
+            /* Top padding for fixed header */
+        }
+
+        .detail-image-wrapper {
+            width: 100%;
+            height: auto;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .detail-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .detail-info {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .detail-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .detail-meta {
+            color: var(--color-gold);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            font-family: var(--font-serif);
+        }
+
+        .detail-desc {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ddd;
+            text-align: left;
+            /* Better readability for long text */
+            margin-bottom: 3rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid var(--color-gold);
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .back-btn:hover {
+            background-color: var(--color-gold);
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled"> <!-- Always scrolled style for visibility -->
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="DESIGN NOEL">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#design-direction">About</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#projects">Projects</a>
+                        <ul class="dropdown-content">
+                            <li><a href="index.html#projects-landscape" data-category="landscape">경관심의</a></li>
+                            <li><a href="index.html#projects-environment" data-category="environment">특화디자인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="detail-container" id="detail-container">
+        <!-- Content will be injected by JS -->
+        <div class="loading" style="text-align:center;">Loading...</div>
+    </div>
+
+    <script src="js/projects.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+
+</html>
