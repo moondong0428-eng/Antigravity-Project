@@ -18,13 +18,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css">
 </head>
 
 <body>
     <header id="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="DESIGN NOEL">
+                <img src="assets/images/logo_header.png" alt="DESIGN NOEL">
             </a>
             <nav>
                 <ul>
@@ -45,11 +46,7 @@
     <section id="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <!-- User requested: DESIGN (Regular) NOeL (Bold) with stylistic 'e' -->
-            <h1 class="hero-title-styled">
-                <span class="font-regular">DESIGN</span>
-                <span class="font-bold">NO<span class="stylistic-e">e</span>:L</span>
-            </h1>
+            <img src="assets/images/logo_hero.png" alt="DESIGN NOEL" class="hero-logo-center">
             <p>공간에 노을을 담다</p>
         </div>
         <div class="scroll-down">
@@ -138,6 +135,11 @@
             </footer>
         </div>
     </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox-overlay">
+        <img id="lightbox-img" src="" alt="Full View" class="lightbox-image">
+    </div>
 
     <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
