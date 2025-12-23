@@ -67,9 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Sort projects by ID descending (newest first)
         const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
 
-        const filteredProjects = category === 'all'
-            ? sortedProjects.slice(0, 3)
-            : sortedProjects.filter(p => p.category === category);
+        let filteredProjects = [];
+
+        if (category === 'all') {
+            // Show only the 6 most recently uploaded projects (highest IDs)
+            filteredProjects = sortedProjects.slice(0, 6);
+        } else {
+            filteredProjects = sortedProjects.filter(p => p.category === category);
+        }
 
         if (filteredProjects.length === 0) {
             projectGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #888;">No projects found in this category.</p>';
@@ -83,8 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="project-image" style="background-image: url('${project.images[0]}'); background-size: cover; background-position: center;"></div>
                 <div class="project-info">
                     <h3>${project.title}</h3>
-                    <p>${project.location}</p>
-                    <p class="project-desc">${project.description}</p>
                 </div>
             `;
             projectGrid.appendChild(projectItem);
@@ -141,4 +144,22 @@ document.addEventListener('DOMContentLoaded', () => {
             renderProjects(category);
         });
     });
+
+    // Lightbox for About Section
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const aboutImages = document.querySelectorAll('.direction-img');
+
+    if (lightbox && aboutImages.length > 0) {
+        aboutImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+    }
 });

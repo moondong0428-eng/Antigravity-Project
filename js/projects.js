@@ -78,7 +78,7 @@ window.projectData = [
         category: "landscape",
         location: "Uijeongbu, Korea",
         images: ["assets/images/projects/landscape/uijeongbu_naribaek.jpg"],
-        description: "의정부 나리백 지역의 주상복합 건립을 위한 경관 심의 프로젝트입니다."
+        description: "- 사 업 명 : 나리백시티 공동주택<br>- 대지위치 : 경기도 의정부시 금오동 산 26-19번지 일원<br>- 대지면적 : 20,435.0000㎡<br>- 건축면적 : 3,158.5034㎡<br>- 건 폐 율 : 15.46%<br>- 연 면 적 : 167,430.2522㎡<br>- 용 적 률 : 429.77%<br>- 규 모 : 지하 4층 / 지상 39층<br>- 세 대 수 : 671세대"
     },
     {
         id: 13,

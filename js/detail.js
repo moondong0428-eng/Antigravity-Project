@@ -42,6 +42,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="index.html#projects" class="back-btn">Back to Projects</a>
             </div>
         `;
+        // Initialize Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const detailImages = document.querySelectorAll('.detail-image');
+
+        detailImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close Lightbox on click
+        lightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
     } else {
         container.innerHTML = `
             <div style="text-align:center; padding: 50px;">
