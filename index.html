@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디자인 노을 | Design Noel</title>
+    <meta name="description" content="건축 특화 디자인 스튜디오, 디자인 노을. 공간에 감성을 담습니다.">
+    <link rel="canonical" href="https://www.designnoel.com/">
+    <meta property="og:url" content="https://www.designnoel.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="디자인 노을 | Design Noel">
+    <meta property="og:description" content="건축 특화 디자인 스튜디오, 디자인 노을. 공간에 감성을 담습니다.">
+    <meta property="og:image" content="https://www.designnoel.com/assets/images/hero-sunset.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-kopub@1.0/kopubdotum.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo_header_final_v6.png" alt="DESIGN NOEL">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#design-direction">About</a></li>
+                    <li class="dropdown">
+                        <a href="#projects">Projects</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#projects-landscape" data-category="landscape">경관심의</a></li>
+                            <li><a href="#projects-environment" data-category="environment">특화디자인</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <img src="assets/images/logo_hero_final_v5.png" alt="DESIGN NOEL" class="hero-logo-center">
+            <p>공간에 노을을 담다</p>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <section id="design-direction">
+        <div class="container">
+            <div class="section-title">
+                <h2>DESIGN DIRECTION</h2>
+            </div>
+            <div class="direction-content">
+                <div class="direction-text">
+                    <h3>사람과 자연과 건축</h3>
+                    <p>
+                        건축은 사람을 위한 공간이지만 건축도 자연의 일부 입니다.<br>
+                        노을은 건축이 사람과 자연을 함께 하는 공간으로 제안합니다.<br>
+                        사람과 자연을 형성하는 공간, 그 공간을 추구합니다.
+                    </p>
+                </div>
+                <img src="assets/images/design_direction.jpg" alt="Design Direction" class="direction-img">
+            </div>
+
+            <div class="direction-content" style="margin-top: 80px;">
+                <div class="direction-text">
+                    <h3>건축과 삶</h3>
+                    <p>
+                        건축안에서 사람들은 가정을 이루고 살아가고 인생이 있고 추억이 있습니다.<br>
+                        사람들의 삶이 묻어있는 디자인을 계획하고 사람들의 일상이 묻어있는 디자인을 추구합니다.
+                    </p>
+                </div>
+                <img src="assets/images/architecture_life.jpg" alt="Architecture and Life" class="direction-img">
+            </div>
+
+            <div class="direction-content" style="margin-top: 80px;">
+                <div class="direction-text">
+                    <h3>건축과 예술</h3>
+                    <p>
+                        현대인의 삶의 질이 높아지면서 사람들이 추구하는 디자인이 점점 높아 지고 있습니다.<br>
+                        사람들의 눈높이에 맞춰 디자인적이면서 예술적인 부분을 더하여 디자인을 맞추겠습니다.
+                    </p>
+                </div>
+                <img src="assets/images/architecture_art.jpg" alt="Architecture and Art" class="direction-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="project-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="landscape">경관심의</button>
+                <button class="tab-btn" data-category="environment">환경 특화 디자인</button>
+            </div>
+            <div class="project-grid" id="project-grid">
+                <!-- Projects will be loaded here dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact-info">
+                <p>Email: design_noel@naver.com</p>
+                <p>Address: 서울특별시 송파구 새말로 62, 송파푸르지오시티 243호</p>
+                <p>Instagram: <a href="https://instagram.com/design_noel12" target="_blank">@design_noel12</a></p>
+            </div>
+            <div class="map-container" style="margin-top: 40px; text-align: center; margin-bottom: 60px;">
+                <!-- Naver Map Search Link as a functional placeholder -->
+                <iframe
+                    src="https://maps.google.com/maps?q=서울특별시%20송파구%20새말로%2062%20송파푸르지오시티&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="450"
+                    style="border:0; max-width: 800px; aspect-ratio: 1/1; box-shadow: 0 4px 15px rgba(0,0,0,0.5);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2025 Design Noel. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Lightbox Container -->
+    <div id="lightbox" class="lightbox-overlay">
+        <img id="lightbox-img" src="" alt="Full View" class="lightbox-image">
+    </div>
+
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
